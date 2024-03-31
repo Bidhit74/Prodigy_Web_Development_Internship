@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#navbar img {
+    display: none;
+}
+
+/* Fixed position navigation menu */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 30px;
+    transition: background-color 0.3s; /* Smooth color change on scroll */
+}
+
+.logo {
+    font-weight: bold;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#navbar a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+#navbar a:hover {
+    color: #007bff; /* Example hover color */
+}
+
+#navbar.scrolled {
+    background-color: #1f39e1; /* Example scrolled background color */
+    color: white;
+}
+#navbar.scrolled a {
+    color: white;
+}
+#navbar.scrolled a:hover {
+    color: rgb(136, 10, 247);
+}
+#imgSection img {
+    object-position: center;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media (max-width: 600px) {
+    #navbar img {
+        display: block;
+        width: 20vw;
+        padding-left: 35vw;
+    }
+    #navbar a {
+        display: none;
+    }
+    #navbar.scrolled img {
+        color: white;
+    }
+}
