@@ -8,7 +8,7 @@ header {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-#navbar img {
+#navbar .menu {
     display: none;
 }
 
@@ -43,15 +43,15 @@ header {
 #navbar a {
     color: #333;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth color change on hover */
+    transition: color 0.3s;
+    font-weight: 600;
 }
 
 #navbar a:hover {
-    color: #007bff; /* Example hover color */
+    color: #007bff;
 }
-
 #navbar.scrolled {
-    background-color: #1f39e1; /* Example scrolled background color */
+    background-color: #1f39e1;
     color: white;
 }
 #navbar.scrolled a {
@@ -68,15 +68,13 @@ header {
 }
 
 @media (max-width: 600px) {
-    #navbar img {
+    #navbar .menu {
         display: block;
-        width: 20vw;
-        padding-left: 35vw;
+        margin-left: 35vw;
+        font-size: 6vw;
+        cursor: pointer;
     }
     #navbar a {
         display: none;
-    }
-    #navbar.scrolled img {
-        color: white;
     }
 }
