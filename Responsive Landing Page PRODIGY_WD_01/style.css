@@ -56,6 +56,7 @@ header {
 }
 #navbar.scrolled a {
     color: white;
+    mix-blend-mode: difference;
 }
 #navbar.scrolled a:hover {
     color: rgb(136, 10, 247);
@@ -67,6 +68,19 @@ header {
     width: 100vw;
 }
 
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.1vw;
+    background-color: #a1aefdeb;
+    margin-top: -23px;
+}
+footer h1 {
+    padding-top: 1.3vw;
+    opacity: 0.6;
+}
+
 @media (max-width: 600px) {
     #navbar .menu {
         display: block;
@@ -76,5 +90,10 @@ header {
     }
     #navbar a {
         display: none;
+    }
+    footer h1 {
+        padding-top: 5vw;
+        opacity: 0.6;
+        font-size: 3vw;
     }
 }
