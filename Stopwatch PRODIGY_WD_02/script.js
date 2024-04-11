@@ -21,7 +21,9 @@ resetBtn.addEventListener("click", () => {
     clearInterval(int);
     [milliSeconds, seconds, minutes, hours] = [0, 0, 0, 0];
     timerDisplay.innerHTML = "00 : 00 : 00 : 000";
-    laps.style.display = "none";
+    // let child = document.querySelector("p");
+    // laps.removeChild(child);
+    laps.innerHTML = "";
 });
 
 lapBtn.addEventListener("click", (e) => {
