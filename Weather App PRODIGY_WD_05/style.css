@@ -1,0 +1,133 @@
+:root {
+    --Lpink: #fed5f8;
+    --Lblue: #61e0f4;
+    --Lwhite: #f2f3f5;
+    --Blight: rgb(2, 40, 100);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities Section Strat*/
+.flex {
+    display: flex;
+}
+
+img {
+    width: 4.5vw;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.weather-box {
+    text-align: center;
+    width: 18vw;
+    height: 12vw;
+    background: rgba(241, 227, 227, 0.277);
+    border-radius: 0.5rem;
+    line-height: 1.7rem;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Lblue);
+    background: #00000029;
+    cursor: pointer;
+}
+/* Utilities Section End*/
+
+.wrapper {
+    height: 100vh;
+    /* background: linear-gradient(var(--Lwhite), var(--Lblue), var(--Lpink)); */
+    background: linear-gradient(350deg, var(--Lwhite), rgba(21, 3, 3, 0) 90.71%),
+        linear-gradient(270deg, var(--Lblue), rgba(0, 255, 0, 0) 90.71%),
+        linear-gradient(160deg, var(--Lpink), rgba(0, 0, 255, 0) 90.71%);
+    background-repeat: no-repeat;
+    color: var(--Blight);
+}
+.main-container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.your-search-weather {
+    margin: 3vw 0;
+    gap: 20vw;
+}
+.your-weather {
+    cursor: pointer;
+}
+.search-weather {
+    cursor: pointer;
+}
+.Grant-location {
+    position: absolute;
+    right: 38%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    scale: 0;
+}
+.search-form {
+    position: absolute;
+    scale: 0;
+    justify-content: center;
+    gap: 0.5rem;
+    left: 28%;
+}
+.search-input {
+    width: 40vw;
+    border-radius: 0.5rem;
+    padding: 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+.loading-screen {
+    position: absolute;
+    scale: 0;
+    text-align: center;
+    left: 42%;
+}
+.loading-screen img {
+    width: 150px;
+    height: 150px;
+}
+.content {
+    position: absolute;
+    scale: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    top: 35%;
+}
+.place-name {
+    gap: 1.5rem;
+}
+.place-name img {
+    width: 35px;
+}
+.weather-container {
+    margin-top: 2vw;
+    gap: 2vw;
+}
+.weather-container h2 {
+    font-size: 2vw;
+}
+/* JavaScript Css properties */
+.current-tab {
+    background-color: rgb(126 157 233 / 54%);
+    border-radius: 4px;
+    width: auto;
+}
+.all-content .active {
+    scale: 1;
+}

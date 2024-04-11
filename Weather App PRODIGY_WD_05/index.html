@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/location.png" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>WEATHER APP</h1>
+        <div class="main-container flex">
+            <div class="your-search-weather flex">
+                <div class="your-weather">
+                    <h3>Your Weather</h3>
+                </div>
+                <div class="search-weather">
+                    <h3>Search Location</h3>
+                </div>
+            </div>
+        </div>
+        <div class="all-content">
+            <div class="Grant-location flex">
+                <img src="images/location.png" alt="image">
+                <h1>Grant Location Access</h1>
+                <p>Allow Access To Get Weather Information</p>
+                <button data-grantBtn>GRANT ACCESS</button>
+            </div>
+
+            <form action="" class="search-form flex">
+                <input class="search-input" placeholder="Search for city...">
+                <button data-searchBtn type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="loading-screen">
+                <h2>Loading</h2>
+                <img src="images/loading.gif" alt="image">
+            </div>
+
+            <div class="content flex">
+                <div class="place-name flex">
+                    <h2 data-placeName>Madhubani</h2>
+                    <img data-placeIcon src="images/cloud.png" alt="image">
+                </div>
+                <h3 data-weatherDes>Value</h3>
+                <img data-weatherIcon src="images/wind.png" alt="image">
+                <h3 data-temprature>25.08 C</h3>
+                <div class="weather-container flex">
+                    <div class="windSpeed weather-box">
+                        <img src="images/wind.png" alt="image">
+                        <h2>WINDSPEED</h2>
+                        <p data-windPara>50%</p>
+                    </div>
+                    <div class="humidity weather-box">
+                        <img src="images/humidity.png" alt="image">
+                        <h2>HUMIDITY</h2>
+                        <p data-humidityPara>75%</p>
+                    </div>
+                    <div class="clouds weather-box">
+                        <img src="images/cloud.png" alt="image">
+                        <h2>CLOUDS</h2>
+                        <p data-cloudsPara>100%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="Aap.js"></script>
+</body>
+
+</html>
