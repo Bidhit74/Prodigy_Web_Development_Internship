@@ -1,0 +1,44 @@
+@media (max-width: 700px) {
+    h1 {
+        font-size: 6vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    img {
+        width: 6vw;
+    }
+    .weather-box {
+        width: 25vw;
+        height: 16vw;
+        line-height: 5vw;
+    }
+    .place-name img {
+        width: 5vw;
+        height: 4vw;
+    }
+    .place-name h2 {
+        font-size: 4vw;
+    }
+    .loading-screen {
+        left: 32vw;
+        font-size: 3vw;
+        top: 25vw;
+    }
+    .loading-screen img {
+        width: 30vw;
+        height: 25vw;
+    }
+    .search-input {
+        width: 50vw;
+        height: 7vw;
+        font-size: 3vw;
+    }
+    .search-form button {
+        height: 7vw;
+    }
+    .your-search-weather {
+        margin: 2vw 0;
+        gap: 10vw;
+    }
+}
