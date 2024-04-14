@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.selectBox {
+    position: absolute;
+    background-color: #b6afecdf;
+    width: 300px;
+    padding: 1rem;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: #1c1845;
+    scale: 1;
+}
+.selectBox header {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contentBox h4 {
+    font-weight: 400;
+}
+.btnOption {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    color: white;
+    background: #6b5fe2;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.btn:hover {
+    scale: 1.05;
+    background-color: #6c61e5a2;
+}
+.game-info {
+    scale: 0;
+    position: absolute;
+    top: 6%;
+}
+.playersTurn {
+    position: absolute;
+    width: 90%;
+    max-width: 20rem;
+    background: #6b5fe2;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    top: 8%;
+    scale: 0;
+}
+.playersTurn span {
+    padding: 0.5rem 1.4rem;
+    color: rgb(212, 156, 16);
+    z-index: 2;
+}
+.slider {
+    position: absolute;
+    width: 40%;
+    padding: 1.2rem 1.4rem;
+    background-color: #262546;
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.rightAnime {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.leftAnime {
+    animation-name: move1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 57%;
+    }
+}
+@keyframes move1 {
+    from {
+        right: 0%;
+    }
+    to {
+        right: 57%;
+    }
+}
+
+.game-content {
+    position: absolute;
+    width: 90%;
+    max-width: 20rem;
+    background: #6b5fe2;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+    scale: 0;
+    transition: all 5s;
+}
+.result-box {
+    position: absolute;
+    background-color: #b6afecdf;
+    width: 350px;
+    height: 100px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    scale: 0;
+}
+.game-strat {
+    cursor: pointer;
+    scale: 1;
+}
+.game-box {
+    cursor: pointer;
+    position: relative;
+    font-size: 2.2rem;
+    color: white;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-border1 {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+}
+.box-border2 {
+    border-bottom: 3px solid white;
+}
+.box-border3 {
+    border-right: 3px solid white;
+}
+
+.winner {
+    background-color: green;
+}
+.active {
+    scale: 1;
+    transition: all 2s;
+}
+footer {
+    position: absolute;
+    color: white;
+    font-size: 3.5vw;
+    letter-spacing: 2px;
+    font-family: cursive;
+    opacity: 0.7;
+    bottom: 0;
+}
