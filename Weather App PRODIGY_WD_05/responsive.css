@@ -41,6 +41,10 @@
         margin: 2vw 0;
         gap: 10vw;
     }
+    .Grant-location {
+        right: 20%;
+        font-size: 3vw;
+    }
     footer {
         font-size: 2.7vw;
     }
