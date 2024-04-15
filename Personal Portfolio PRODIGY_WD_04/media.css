@@ -1,0 +1,195 @@
+@media (max-width: 768px) {
+    .logoText {
+        font-size: 22px;
+    }
+    .nabItem a {
+        padding: 0.8rem;
+    }
+    .faded-text {
+        font-size: 3em;
+        bottom: -11%;
+    }
+    .project-content-right {
+        right: 3%;
+        top: 8%;
+    }
+    .project-content-left {
+        left: 25%;
+        top: -4%;
+    }
+    .project-number {
+        font-size: 6rem;
+    }
+    .blob-effect {
+        width: 460px;
+    }
+    .skill-img {
+        width: 45px;
+    }
+    .form-input {
+        width: 30rem;
+    }
+
+    form textarea {
+        width: 30rem;
+    }
+}
+@media (max-width: 500px) {
+    .navLogo img {
+        width: 35px;
+    }
+    .logoText {
+        font-size: 10px;
+        margin-left: -0.4rem;
+    }
+    .nabItem a {
+        padding: 0.2rem;
+        font-size: 0.5rem;
+    }
+    #hero-img {
+        width: 5rem;
+        padding: 0.5rem;
+    }
+    .hero-left-heading {
+        font-size: 20px;
+    }
+    .hero-description {
+        margin-top: 1rem;
+        width: 110%;
+        font-weight: 400;
+        font-size: 10px;
+    }
+    .hero-left {
+        gap: 0.7rem;
+    }
+    .hero-section {
+        justify-content: space-between;
+        margin: 2rem auto;
+        padding-bottom: 3rem;
+    }
+    .faded-text {
+        font-size: 1.6em;
+        bottom: -15%;
+    }
+    .btn-pink {
+        padding: 0.2rem 0.3rem;
+        font-size: 12px;
+    }
+    .page-header {
+        font-size: 2rem;
+    }
+    .project-card {
+        height: 200px;
+        width: 90%;
+    }
+    .project-skill {
+        width: 20px;
+    }
+    .project-heading {
+        font-size: 15px;
+        line-height: 0rem;
+    }
+    .project-sub-heading {
+        width: 90%;
+        font-size: 10px;
+    }
+    .icon {
+        font-size: 25px;
+    }
+    .project-number {
+        font-size: 3rem;
+    }
+
+    .project-number-right {
+        right: -4px;
+        top: -12px;
+    }
+    .project-number-left {
+        left: 1px;
+        top: -11px;
+    }
+
+    #project2 {
+        margin-left: 0%;
+    }
+    #project4 {
+        margin-left: 0%;
+    }
+    .project-container {
+        gap: 2rem;
+    }
+    .project-content {
+        gap: 0.85rem;
+    }
+    .project-content-right {
+        right: 0%;
+        top: -15%;
+    }
+    .project-content-left {
+        left: 22%;
+        top: -15%;
+    }
+    .skills-section {
+        width: 100vw;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+    .skill-img {
+        width: 25px;
+    }
+
+    .skill-heading {
+        font-size: 15px;
+    }
+    .skill-para {
+        padding-top: 10px;
+        font-size: 8px;
+    }
+    .skill-content {
+        width: 50vw;
+        padding: 0.1rem;
+    }
+    .blob-effect {
+        width: 270px;
+    }
+    .skills-images {
+        gap: 0.4rem;
+    }
+    .form-section {
+        margin-top: 3rem;
+    }
+    .skill-faded-text {
+        bottom: -36%;
+        left: 73%;
+    }
+    .form-heading {
+        padding-top: 2rem;
+        margin-right: 7rem;
+        font-size: 1.5rem;
+    }
+    .form-text {
+        margin-top: -1.5rem;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+    .form-input {
+        width: 15rem;
+    }
+    form textarea {
+        width: 15rem;
+    }
+    .footer-icons i {
+        padding: 3px;
+        font-size: 12px;
+    }
+    .footer-links a {
+        padding: 5px;
+        font-size: 11px;
+    }
+    .footer-container {
+        height: 120px;
+    }
+    .footer-text {
+        font-size: 1.5rem;
+    }
+}
